@@ -1,4 +1,5 @@
 import os
+import streamlit as st
 from pathlib import Path
 
 # Base Project Directories
@@ -15,4 +16,7 @@ VECTORSTORE_PATH = DATA_DIR / "vectorstore" / "agri_vectorstore"
 VECTORIZER_PATH = DATA_DIR / "vectorstore" / "tfidf_vectorizer.pkl"
 
 # API Keys 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_API_KEY_HERE")
+try:
+    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+except Exception:
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_API_KEY_HERE")
