@@ -1,0 +1,6 @@
+field_id,field_name,crop,N,P,K,ph,soil_moisture_pct,last_irrigated_days_ago,growth_stage,latitude,longitude
+F1,Field 1 - North Plot,wheat,95,55,45,6.5,22,5,Tillering,31.42,73.09
+F2,Field 2 - East Plot,wheat,100,50,40,6.8,35,2,Heading,31.44,73.1
+F3,Field 3 - South Plot,cotton,133,47,24,7.23,40,3,Flowering,31.4,73.08
+F4,Field 4 - West Plot,cotton,136,36,20,6.93,18,7,Boll formation,31.41,73.12
+F5,Field 5 - River Plot,rice,90,42,43,6.5,55,1,Vegetative,31.45,73.07
