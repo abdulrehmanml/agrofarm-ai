@@ -43,10 +43,10 @@ agrofarm-ai/
 │   ├── rag_engine.py       # ChromaDB retrieval logic
 │   ├── weather_engine.py   # Live telemetry mapping
 │   └── config.py           # Environment variables management
-├── data/
-│   ├── raw_knowledge/      # Raw agronomy PDFs and text files
-│   ├── field_status.csv    # Live field telemetry database
-│   └── decision_log.csv    # HITL audit trail
+├── data/                   # Data Directory
+│   ├── raw/                # Raw agronomy PDFs and text files
+│   ├── processed/          # Processed datasets (e.g., field telemetry CSV)
+│   └── vectorstore/        # ChromaDB persistent storage & TF-IDF vectorizer
 └── requirements.txt        # Exact dependency versions
 ```
 (Note: The local vectorstore/ directory is ignored via .gitignore to keep the repository lightweight.)
@@ -55,7 +55,7 @@ agrofarm-ai/
 
 1. Clone the repository:
 ```Bash
-git clone [https://github.com/yourusername/agrofarm-ai.git](https://github.com/yourusername/agrofarm-ai.git)
+git clone https://github.com/abdulrehmanml/agrofarm-ai.git
 ```
 ```Bash
 cd agrofarm-ai
